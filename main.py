@@ -60,7 +60,7 @@ def build_streamlit_app(source_data):
                                                )
         df_selection = source_data.query("genre_1 == @wanted_genre or genre_2 == @wanted_genre or genre_3 == @wanted_genre or genre_4 == @wanted_genre or genre_5 == @wanted_genre or genre_6 == @wanted_genre or genre_7 == @wanted_genre or genre_8 == @wanted_genre or genre_9 == @wanted_genre or genre_10 == @wanted_genre")
 
-        st.header('Filtered Input Data')
+        st.header('Unique Filtered Input Data')
         st.dataframe(df_selection)
 
         # st.table(df_selection.dtypes)
